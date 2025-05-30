@@ -22,7 +22,7 @@ export default function Cadastrar() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 bg-slate-100">
+    <div className="min-h-screen flex justify-center px-4 pt-16 bg-slate-100">
       <div className="backdrop-blur-lg border border-gray-200 rounded-2xl shadow-xl max-w-md w-full p-6 sm:p-8 bg-white">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
           Cadastre-se na FloodTech
