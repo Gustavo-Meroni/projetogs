@@ -8,7 +8,7 @@ export default function Nav() {
           <Link to="/">FloodTech</Link>
         </h1>
 
-        <nav className="flex gap-6 text-sm sm:text-base">
+        <nav className="flex gap-2 sm:gap-4 text-sm sm:text-base flex-wrap">
           <Link
             to="/"
             className="hover:text-cyan-300 transition-colors duration-300"
