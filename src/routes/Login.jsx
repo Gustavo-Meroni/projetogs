@@ -13,7 +13,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center  px-4">
-      <div className="backdrop-blur-lg bg-white/30 border border-gray-200 p-8 rounded-2xl shadow-xl max-w-md w-full">
+      <div className="backdrop-blur-lg border border-gray-200 p-8 rounded-2xl shadow-xl max-w-md w-full">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">
           Login FloodTech
         </h2>

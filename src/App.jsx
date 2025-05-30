@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './routes/Home';
@@ -8,7 +8,16 @@ import Solucao from './routes/Solucao';
 import Sobre from './routes/Sobre';
 import Error from './routes/Error';
 import { useEffect } from 'react';
-import ScrollToTop from './components/ScrollToTop';
+
+function ScrollToTop() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return null;
+}
 
 export default function App() {
   useEffect(() => {
