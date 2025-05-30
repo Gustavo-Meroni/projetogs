@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './routes/Home';
@@ -10,7 +10,7 @@ import Error from './routes/Error';
 
 export default function App() {
   return (
-    <HashRouter basename="/projetogs">
+    <BrowserRouter>
       <div className="min-h-screen flex flex-col bg-slate-100">
         <Nav />
         <main className="flex-1">
@@ -25,6 +25,6 @@ export default function App() {
         </main>
         <Footer />
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
