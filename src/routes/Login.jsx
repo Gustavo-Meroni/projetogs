@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, Lock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -69,12 +70,12 @@ export default function Login() {
 
         <p className="mt-4 text-center text-sm text-gray-700">
           Ainda não tem uma conta?{' '}
-          <a
-            href="/cadastrar"
+          <Link
+            to="/cadastrar"
             className="text-blue-700 font-semibold hover:underline"
           >
             Crie agora
-          </a>
+          </Link>
         </p>
       </div>
     </div>

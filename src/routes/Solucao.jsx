@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import solutionImage from '../assets/solution-image.jpg';
 import { CloudRain, Cpu, AlertCircle, MapPinned } from 'lucide-react';
 
@@ -89,18 +90,18 @@ export default function Solucao() {
             minimizar danos causados pelas enchentes.
           </p>
           <div className="mt-6 flex justify-center gap-4 flex-wrap">
-            <a
-              href="/cadastrar"
+            <Link
+              to="/cadastrar"
               className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 focus:outline focus:ring-2 focus:ring-blue-400 transition-colors"
             >
               Criar Conta
-            </a>
-            <a
-              href="/sobre"
+            </Link>
+            <Link
+              to="/sobre"
               className="border border-blue-700 text-blue-700 px-6 py-2 rounded hover:bg-blue-200 focus:outline focus:ring-2 focus:ring-blue-400 transition-colors"
             >
               Saiba Mais
-            </a>
+            </Link>
           </div>
         </section>
       </div>
