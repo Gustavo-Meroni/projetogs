@@ -1,10 +1,9 @@
-import floodImage from '../assets/flood.png';
+import floodImage from '../assets/flood-forecasting.png';
 
 export default function Home() {
   return (
     <div className="py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Título e Introdução */}
         <section className="text-center mb-12 mt-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-blue-900 mb-4">
             Tecnologia contra enchentes
@@ -16,7 +15,6 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Imagem principal */}
         <div className="rounded-lg overflow-hidden shadow-md mb-12 max-w-4xl mx-auto border border-gray-200">
           <img
             src={floodImage}
@@ -25,7 +23,6 @@ export default function Home() {
           />
         </div>
 
-        {/* Cards com funcionalidades */}
         <section
           aria-label="Funcionalidades do sistema"
           className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16"
@@ -56,7 +53,6 @@ export default function Home() {
           ))}
         </section>
 
-        {/* Call to Action */}
         <section className="bg-gradient-to-r from-blue-100 to-sky-200 py-12 px-4 text-center rounded-lg shadow mb-8">
           <h3 className="text-2xl sm:text-3xl font-bold text-blue-900">
             Faça parte da solução!
