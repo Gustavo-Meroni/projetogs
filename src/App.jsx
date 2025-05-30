@@ -7,10 +7,19 @@ import Cadastrar from './routes/Cadastrar';
 import Solucao from './routes/Solucao';
 import Sobre from './routes/Sobre';
 import Error from './routes/Error';
+import { useEffect } from 'react';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
+  useEffect(() => {
+    if (!window.location.hash) {
+      window.location.replace(window.location.pathname + '#/');
+    }
+  }, []);
+
   return (
     <HashRouter>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-slate-100">
         <Nav />
         <main className="flex-1">
