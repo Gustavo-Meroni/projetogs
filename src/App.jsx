@@ -10,7 +10,7 @@ import Error from './routes/Error';
 
 export default function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="/projetogs">
       <div className="min-h-screen flex flex-col bg-slate-100">
         <Nav />
         <main className="flex-1">
