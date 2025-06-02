@@ -16,7 +16,7 @@ export default function Nav() {
           </Link>
         </h1>
 
-        {/* Botão hamburguer */}
+        
         <button
           onClick={toggleMenu}
           className="sm:hidden p-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white"
@@ -25,7 +25,7 @@ export default function Nav() {
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Menu */}
+        
         <nav
           className={`
             sm:flex sm:flex-row sm:items-center
