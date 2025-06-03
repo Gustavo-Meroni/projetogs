@@ -16,53 +16,51 @@ export default function Nav() {
           </Link>
         </h1>
 
-        
         <button
           onClick={toggleMenu}
-          className="sm:hidden p-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white"
+          className="sm:hidden p-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-white transition-colors duration-300"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        
         <nav
           className={`
-            sm:flex sm:flex-row sm:items-center
-            ${isOpen ? 'block' : 'hidden'}
+            flex flex-col sm:flex-row sm:items-center
             absolute sm:static
             top-full right-0
             w-48 sm:w-auto
-            bg-blue-300 bg-opacity-90 sm:bg-transparent
+            bg-blue-300/90 sm:bg-transparent
             text-center sm:text-left
             z-50
             shadow-lg sm:shadow-none
-            gap-1 sm:gap-2 lg:gap-4
+            gap-2 sm:gap-4 lg:gap-6
             rounded-b-md
+            overflow-hidden
+            transition-all duration-300 ease-in-out
+            ${
+              isOpen
+                ? 'max-h-80 opacity-100'
+                : 'max-h-0 opacity-0 sm:max-h-full sm:opacity-100'
+            }
           `}
         >
-          {['/', '/login', '/cadastrar', '/solucao', '/sobre'].map(
-            (path, idx) => {
-              const label = {
-                '/': 'Home',
-                '/login': 'Login',
-                '/cadastrar': 'Cadastrar',
-                '/solucao': 'Solução',
-                '/sobre': 'Sobre',
-              }[path];
-
-              return (
-                <Link
-                  key={idx}
-                  to={path}
-                  onClick={() => setIsOpen(false)}
-                  className="block px-4 py-2 hover:text-cyan-700 transition-colors duration-300"
-                >
-                  {label}
-                </Link>
-              );
-            },
-          )}
+          {[
+            { path: '/', label: 'Home' },
+            { path: '/login', label: 'Login' },
+            { path: '/cadastrar', label: 'Cadastrar' },
+            { path: '/solucao', label: 'Solução' },
+            { path: '/sobre', label: 'Sobre' },
+          ].map(({ path, label }) => (
+            <Link
+              key={path}
+              to={path}
+              onClick={() => setIsOpen(false)}
+              className="block px-4 py-2 hover:text-cyan-300 transition-colors duration-300 font-medium"
+            >
+              {label}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>

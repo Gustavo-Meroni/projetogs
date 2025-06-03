@@ -8,19 +8,18 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
- 
+
     if (!email || !password) {
       alert('Por favor, preencha todos os campos!');
       return;
     }
- 
-    alert("Login realizado com sucesso!");
 
+    alert('Login realizado com sucesso!');
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center  px-4">
-      <div className="backdrop-blur-lg border border-gray-200 p-8 rounded-2xl shadow-xl max-w-md w-full bg-white">ck
+      <div className="backdrop-blur-lg border border-gray-200 p-8 rounded-2xl shadow-xl max-w-md w-full bg-white">
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-6">
           Login FloodTech
         </h2>
