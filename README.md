@@ -10,11 +10,12 @@ Bem-vindo ao **FloodTech**, um projeto web focado em fornecer soluções tecnol�
 ## 🌊 Visão geral
  
 O projeto foi desenvolvido com:
- 
-- **React** (com React Router para rotas)
-- **Tailwind CSS** (para um design responsivo e moderno)
-- **Lucide-react** (para ícones elegantes)
+
+- **React (com Vite)** — para criação de aplicações modernas, com suporte a rotas (React Router)
+- **Tailwind CSS** — para um design responsivo e moderno
+- **Lucide-react** — para ícones elegantes
 - **JavaScript (ES6+)**
+
  
 ## ✨ Funcionalidades
  
