@@ -1,5 +1,10 @@
 # FloodTech 🚀
- 
+
+## 👥 Integrantes:
+- **Diogo Cecchini Bueno** – 560427
+- **Gustavo Pandolfo Meroni** – 560271
+- **Matheus Aparecido Rocha Plati** – 559813
+
 Bem-vindo ao **FloodTech**, um projeto web focado em fornecer soluções tecnológicas para a prevenção e monitoramento de enchentes no Brasil.
  
 ## 🌊 Visão geral

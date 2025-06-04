@@ -29,7 +29,6 @@ export default function Cadastrar() {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Nome */}
           <div>
             <label
               htmlFor="nome"
@@ -51,7 +50,6 @@ export default function Cadastrar() {
             </div>
           </div>
 
-          {/* Telefone */}
           <div>
             <label
               htmlFor="telefone"
@@ -73,7 +71,6 @@ export default function Cadastrar() {
             </div>
           </div>
 
-          {/* CPF */}
           <div>
             <label
               htmlFor="cpf"
@@ -95,7 +92,6 @@ export default function Cadastrar() {
             </div>
           </div>
 
-          {/* Email */}
           <div>
             <label
               htmlFor="email"
@@ -117,7 +113,6 @@ export default function Cadastrar() {
             </div>
           </div>
 
-          {/* Senha */}
           <div>
             <label
               htmlFor="password"
@@ -139,7 +134,6 @@ export default function Cadastrar() {
             </div>
           </div>
 
-          {/* Confirmar Senha */}
           <div>
             <label
               htmlFor="confirmPassword"
@@ -162,7 +156,6 @@ export default function Cadastrar() {
             {error && <p className="mt-1 text-sm text-red-600">{error}</p>}
           </div>
 
-          {/* Botão */}
           <button
             type="submit"
             className="w-full bg-blue-700 text-white py-3 rounded-lg font-semibold shadow hover:bg-blue-800 transition-colors"
